@@ -8,9 +8,9 @@ public abstract class Car implements Movable{
 	public double currentSpeed; // The current speed of the car
 	public Color color; // Color of the car
 	public String modelName; // The car model name
-	public double x = 1;
-	public double y = 1;
-	
+	public double x = 0;
+	public double y = 0;
+	public double dir = 0;
 	
 public double getEnginePower() {
 	return enginePower;
@@ -49,14 +49,13 @@ public void brake(double amount) {
 	decrementSpeed(amount);
 }
 public void move(){
-	if(currentSpeed > 0 ){
-		x += incrementSpeed();
-	}
-}
-public void turnLeft(){
+	x += currentSpeed;
 	
+}
+
+public void turnLeft(){
+dir++;	
 }
 public void turnRight(){
-	
-}
+dir--;}
 }
