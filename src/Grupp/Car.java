@@ -49,10 +49,17 @@ public void brake(double amount) {
 	decrementSpeed(amount);
 }
 public void move(){
-	x += currentSpeed;
+	if(dir == 0) {
+		x += currentSpeed;
+		
+	}else {
+		
+	}
+	
+	
+	
 	
 }
-
 public void turnLeft(){
 dir++;	
 }
