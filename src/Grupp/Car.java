@@ -2,13 +2,14 @@ package Grupp;
 
 import javafx.scene.paint.Color;
 
-public abstract class Car {
+public abstract class Car implements Movable{
 	public boolean turboOn = false;
 	public double enginePower; // Engine power of the car
 	public double currentSpeed; // The current speed of the car
 	public Color color; // Color of the car
 	public String modelName; // The car model name
-	
+	public double x = 1;
+	public double y = 1;
 	
 	
 public double getEnginePower() {
@@ -46,5 +47,16 @@ public void gas(double amount) {
 
 public void brake(double amount) {
 	decrementSpeed(amount);
+}
+public void move(){
+	if(currentSpeed > 0 ){
+		x += incrementSpeed();
+	}
+}
+public void turnLeft(){
+	
+}
+public void turnRight(){
+	
 }
 }
