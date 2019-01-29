@@ -1,0 +1,13 @@
+package Grupp;
+
+public interface Movable {
+
+	
+	
+	void move();
+	
+	void turnLeft();
+	
+	void turnRight();
+	
+}
