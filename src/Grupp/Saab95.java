@@ -3,7 +3,7 @@ import javafx.scene.paint.Color;
 
 public class Saab95 extends Car {
 
-
+	//Description of the Saab95
 
 	public Saab95() {
 		color = Color.BLACK;
@@ -12,7 +12,7 @@ public class Saab95 extends Car {
 		modelName = "Saab95";
 		stopEngine();
 	}
-
+	// Unique speed modifier for Saab95 
 	
 	public double speedFactor() {
 		double turbo = 1;
