@@ -60,6 +60,6 @@ public abstract class Car implements Movable {
 	}
 
 	public void turnRight() {
-		dir += Math.PI/4;
+		dir -= Math.PI/4;
 	}
 }
