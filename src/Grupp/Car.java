@@ -48,9 +48,10 @@ public void gas(double amount) {
 public void brake(double amount) {
 	decrementSpeed(amount);
 }
-public void move(){
-	x += currentSpeed;
-	
+
+public void move(double cSpeed, double direction){
+	x += cSpeed*Math.cos(direction);
+	y += cSpeed*Math.sin(direction);	
 }
 
 public void turnLeft(){
