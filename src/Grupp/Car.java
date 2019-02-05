@@ -2,7 +2,7 @@ package Grupp;
 
 import javafx.scene.paint.Color;
 
-public abstract class Car implements Movable{
+public abstract class Car implements Movable {
 	public boolean turboOn = false;
 	public double enginePower; // Engine power of the car
 	public double currentSpeed; // The current speed of the car
@@ -11,52 +11,55 @@ public abstract class Car implements Movable{
 	public double x = 0;
 	public double y = 0;
 	public double dir = 0;
-	
-public double getEnginePower() {
-	return enginePower;
-}
 
-public double getCurrentSpeed() {
-	return currentSpeed;
-}
-public Color getColor() {
-	return color;
-}
-public void startEngine() {
-	currentSpeed = 0.1;
-}
+	public double getEnginePower() {
+		return enginePower;
+	}
 
-public void stopEngine() {
-	currentSpeed = 0;
-}
+	public double getCurrentSpeed() {
+		return currentSpeed;
+	}
 
-public abstract double speedFactor(); 
+	public Color getColor() {
+		return color;
+	}
 
+	public void startEngine() {
+		currentSpeed = 0.1;
+	}
 
-private void incrementSpeed(double amount) {
-	currentSpeed = getCurrentSpeed() + speedFactor() * amount;
-}
+	public void stopEngine() {
+		currentSpeed = 0;
+	}
 
-private void decrementSpeed(double amount) {
-	currentSpeed = getCurrentSpeed() - speedFactor() * amount;
-}
+	public abstract double speedFactor();
 
-public void gas(double amount) {
-	incrementSpeed(amount);
-}
+	private void incrementSpeed(double amount) {
+		currentSpeed = getCurrentSpeed() + speedFactor() * amount;
+	}
 
-public void brake(double amount) {
-	decrementSpeed(amount);
-}
+	private void decrementSpeed(double amount) {
+		currentSpeed = getCurrentSpeed() - speedFactor() * amount;
+	}
 
-public void move(double cSpeed, double direction){
-	x += cSpeed*Math.cos(direction);
-	y += cSpeed*Math.sin(direction);	
-}
+	public void gas(double amount) {
+		incrementSpeed(amount);
+	}
 
-public void turnLeft(){
-dir++;	
-}
-public void turnRight(){
-dir--;}
+	public void brake(double amount) {
+		decrementSpeed(amount);
+	}
+
+	public void move() {
+		x += getCurrentSpeed() * Math.cos(dir);
+		y += getCurrentSpeed() * Math.sin(dir);
+	}
+
+	public void turnLeft() {
+		dir += Math.PI/4;
+	}
+
+	public void turnRight() {
+		dir += Math.PI/4;
+	}
 }
