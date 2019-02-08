@@ -12,56 +12,6 @@ public abstract class Car implements Movable {
 	public double y = 0;
 	public double dir = 0;
 
-	
-public double getEnginePower() {
-	return enginePower;
-}
-
-public double getCurrentSpeed() {
-	return currentSpeed;
-}
-public Color getColor() {
-	return color;
-}
-public void startEngine() {
-	currentSpeed = 0.1;
-}
-
-public void stopEngine() {
-	currentSpeed = 0;
-}
-
-public abstract double speedFactor(); 
-
-
-private void incrementSpeed(double amount) {
-	currentSpeed = getCurrentSpeed() + speedFactor() * amount;
-}
-
-private void decrementSpeed(double amount) {
-	currentSpeed = getCurrentSpeed() - speedFactor() * amount;
-}
-
-public void gas(double amount) {
-	incrementSpeed(amount);
-}
-
-public void brake(double amount) {
-	decrementSpeed(amount);
-}
-public void move(){
-	if(dir == 0) {
-		x += currentSpeed;
-		
-	}else {
-		
-	}
-	
-	
-	
-	
-}
-
 
 	public double getEnginePower() {
 		return enginePower;
@@ -107,11 +57,11 @@ public void move(){
 	}
 
 	public void turnLeft() {
-		dir += Math.PI/4;
+		dir += Math.PI / 4;
 	}
 
 	public void turnRight() {
-		dir -= Math.PI/4;
+		dir -= Math.PI / 4;
 	}
 
 }
