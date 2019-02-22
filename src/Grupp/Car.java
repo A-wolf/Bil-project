@@ -11,7 +11,7 @@ public abstract class Car implements Movable {
 	public double x = 0;
 	public double y = 0;
 	public double dir = 0;
-
+	
 
 	public double getEnginePower() {
 		return enginePower;
@@ -44,11 +44,21 @@ public abstract class Car implements Movable {
 	}
 
 	public void gas(double amount) {
+		if(amount < 0 || amount > 1){
+			return;
+		}
+		else{
 		incrementSpeed(amount);
+		}
 	}
 
 	public void brake(double amount) {
+		if(amount < 0 || amount > 1){
+			return;
+		}
+		else{
 		decrementSpeed(amount);
+		}
 	}
 
 	public void move() {
@@ -63,5 +73,6 @@ public abstract class Car implements Movable {
 	public void turnRight() {
 		dir -= Math.PI / 4;
 	}
+	
 
 }
