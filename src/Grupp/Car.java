@@ -11,7 +11,7 @@ public abstract class Car implements Movable {
 	public double x = 0;
 	public double y = 0;
 	public double dir = 0;
-	
+	public boolean flakOpen = false;
 
 	public double getEnginePower() {
 		return enginePower;
@@ -42,7 +42,12 @@ public abstract class Car implements Movable {
 	private void decrementSpeed(double amount) {
 		currentSpeed = getCurrentSpeed() - speedFactor() * amount;
 	}
-
+	public void flakOpen(){
+		flakOpen = true;
+	}
+	public void flakClose(){
+		flakOpen = false;
+	}
 	public void gas(double amount) {
 		if(amount < 0 || amount > 1){
 			return;
