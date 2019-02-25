@@ -1,10 +1,16 @@
 package Grupp;
 import javafx.scene.paint.Color;
-
+/**
+ * 
+ * @author Bosses00 and MercuryBarium
+ *
+ */
 public class Saab95 extends Car {
-
-	//Description of the Saab95
-
+	/**
+	 * 
+	 * A description of the aspects of an Saab95
+	 * 
+	 */
 	public Saab95() {
 		color = Color.BLACK;
 		enginePower = 125;
@@ -12,8 +18,11 @@ public class Saab95 extends Car {
 		modelName = "Saab95";
 		stopEngine();
 	}
-	// Unique speed modifier for Saab95 
-	
+	/*
+	 * 
+	 *The unique speed modifier of the Saab95
+	 *
+	 */
 	public double speedFactor() {
 		double turbo = 1;
 		if (turboOn = true){
