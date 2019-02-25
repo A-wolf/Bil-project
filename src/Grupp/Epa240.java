@@ -3,16 +3,16 @@ import javafx.scene.paint.Color;
 
 public class Epa240 extends Car {
 
-	//Description of the Saab95
+	//Description of the Epa240
 
 	public Epa240() {
-		color = Color.BLACK;
-		enginePower = 125;
+		color = Color.BROWN;
+		enginePower = 25;
 		setTurboOn();
-		modelName = "Saab95";
+		modelName = "Epa240";
 		stopEngine();
 	}
-	// Unique speed modifier for Saab95 
+	// Unique speed modifier for Epa240
 	
 	public double speedFactor() {
 		double turbo = 1;
