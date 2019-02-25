@@ -4,7 +4,7 @@ import javafx.scene.paint.Color;
 	
 	public class Scania extends Car {
 		private int flakDegresOpen = 0;
-		private boolean flakOpen = false;
+		public boolean flakOpen = false;
 	//Description of the Scania	
 
 	public Scania() {
@@ -38,9 +38,13 @@ import javafx.scene.paint.Color;
 				flakOpen = false;
 			}
 	}
-
-
-
-
 	}
+		public void gas(double amount) {
+			if(flakOpen = false){
+			super.gas(amount);
+		}
+		}
+
+
+	
 }
