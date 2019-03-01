@@ -8,7 +8,7 @@ import javafx.scene.paint.Color;
 public class Saab95 extends Car {
 	/**
 	 * @see Grupp.Car#Saab95
-	 * A description of the aspects of an Saab95
+	 * A description of the aspects of a Saab95
 	 * 
 	 */
 	public Saab95() {
@@ -35,18 +35,20 @@ public class Saab95 extends Car {
 
 		/**
 		 * 
-		 * @see Grupp.Saab95#setTurboOn()
+		 * @see Grupp.Car#setTurboOn()
 		 * Turns the speed modifier turbo on 
 		 * 
-		 *@see Grupp.Saab95#setTurboOff()
-		 * Turns the speed modifier turbo off 
-		 * 
-		 * 
-		 */
+		 */	
 		private void setTurboOn() {
 			turboOn = true;
 		}
 
+		/**
+		 * 
+		 *@see Grupp.Car#setTurboOff()
+		 * Turns the speed modifier turbo off 
+		 * 
+		 */
 		private void setTurboOff() {
 			turboOn = false;
 		}
