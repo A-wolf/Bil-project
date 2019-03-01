@@ -1,11 +1,18 @@
 package Grupp;
 import javafx.scene.paint.Color;
 
+	/**
+	 * @author Bosses00 and MercuryBarium
+	 *
+	 */
 	public class BmvBrum extends Car {
 	private final static double trimFactor = 2.5;
 
-	//Description of the BmvBrum	
-
+	/**
+	 * 
+	 * A description of the aspects of an BmvBrum
+	 * 
+	 */
 	public BmvBrum() {
 		color = Color.RED;
 		enginePower = 200;
@@ -14,6 +21,9 @@ import javafx.scene.paint.Color;
 	}
 	// Unique speed modifier for BmvBrum 
 	
+	/* 
+	 * @see Grupp.Car#speedFactor()
+	 */
 	public double speedFactor() {
 		return enginePower * 0.01 * trimFactor;
 	}

@@ -7,14 +7,23 @@ package Grupp;
 public interface Movable {
 
 	
+	/**
+	 * @see Grupp.Car#move()
+	 */
+	
+	void move();
+	
 	
 	/**
-	 * 
-	 * Methods that can be called via movable for easier implementation
-	 * 
+	 * @see Grupp.Car#turnLeft()
 	 */
-	void move();
+	
 	void turnLeft();
+	
+	/**
+	 * @see Grupp.Car#turnRight()
+	 */
+	
 	void turnRight();
 	
 }
