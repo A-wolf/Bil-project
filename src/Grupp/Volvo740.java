@@ -20,8 +20,9 @@ import javafx.scene.paint.Color;
 		stopEngine();
 	}
 
-	/* 
-	 * The unique speed modifier of the volvo740
+	
+	/*
+	 * @see Grupp.Car#speedFactor()
 	 */
 	public double speedFactor() {
 		return enginePower * 0.01 * trimFactor;

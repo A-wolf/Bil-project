@@ -2,6 +2,10 @@ package Grupp;
 
 import javafx.scene.paint.Color;
 
+/**
+ * @author Bosses00 and MercuryBarium
+ *
+ */
 public abstract class Car implements Movable {
 	public boolean turboOn = false;
 	public double enginePower; // Engine power of the car
@@ -32,6 +36,9 @@ public abstract class Car implements Movable {
 		currentSpeed = 0;
 	}
 
+	/**
+	 * @return The unique Speed factor of a car
+	 */
 	public abstract double speedFactor();
 
 	private void incrementSpeed(double amount) {
