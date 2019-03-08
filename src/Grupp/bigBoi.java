@@ -50,7 +50,6 @@ public void flakClose(){
 	public void lastSkit(Car c){
 		if(flakOpen = true){
 			if(load.size() < 5 && c.weight < 3){
-				
 					load.add(c);
 				
 			} else {
@@ -58,6 +57,18 @@ public void flakClose(){
 			}
 		}
 	}
+	public void lastAv(){
+		if(flakOpen = false){
+			flakOpen();
+		}
+		for(int i = load.size() - 1; i >= 0; i--) {
+			System.out.println("Unloading " + load.get(i).modelName);
+			load.remove(i);
+		}
+	}
+	
+	
+	
 	public void gas(double amount) {
 		if(flakOpen = false){
 		super.gas(amount);

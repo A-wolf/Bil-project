@@ -6,7 +6,7 @@ import javafx.scene.paint.Color;
  *
  */
 public class Saab95 extends Car {
-	public double weight = 1;
+	public double weight = 1.2;
 	/**
 	 * @see Grupp.Car#Saab95
 	 * A description of the aspects of a Saab95

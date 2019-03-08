@@ -2,6 +2,7 @@ package Grupp;
 import javafx.scene.paint.Color;
 
 public class Epa240 extends Car {
+	public double weight = 1.3;
 
 	//Description of the Epa240
 
