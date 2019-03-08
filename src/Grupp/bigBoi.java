@@ -1,11 +1,16 @@
 package Grupp;
+import java.util.ArrayList;
+
 import javafx.scene.paint.Color;
 
+	
 
 public class bigBoi extends Car {
+	private static final Car Scania = null;
 	private int flakDegresOpen = 0;
 	public boolean flakOpen = false;
-	private String[] Load = new String[5];  
+	ArrayList<Car> load=new ArrayList<Car>();
+	
 //Description of the bigBoi	
 
 public bigBoi() {
@@ -14,7 +19,7 @@ public bigBoi() {
 	modelName = "Scania";
 	stopEngine();
 }
-// Unique speed modifier for bigBoi 
+// speed modifier for bigBoi 
 
 public double speedFactor() {
 	return enginePower * 0.01;
@@ -42,10 +47,15 @@ public void flakClose(){
 }
 	
 	
-	public void lastSkit(){
+	public void lastSkit(Car c){
 		if(flakOpen = true){
-		Load[0] += "car";
-		
+			if(load.size() < 5 && c.weight < 3){
+				
+					load.add(c);
+				
+			} else {
+				System.out.println("Vehicle is either too heavy or load is full!");
+			}
 		}
 	}
 	public void gas(double amount) {
@@ -54,6 +64,6 @@ public void flakClose(){
 	}
 	}
 
-
+	
 
 }

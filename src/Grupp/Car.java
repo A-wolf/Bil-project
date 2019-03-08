@@ -15,6 +15,7 @@ public abstract class Car implements Movable {
 	public double x = 0;
 	public double y = 0;
 	public double dir = 0;
+	public double weight;
 
 	public double getEnginePower() {
 		return enginePower;
