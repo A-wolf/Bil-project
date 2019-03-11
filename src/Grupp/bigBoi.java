@@ -15,8 +15,8 @@ public class bigBoi extends Car {
 
 public bigBoi() {
 	color = Color.BLUE;
-	enginePower = 700;
-	modelName = "Scania";
+	enginePower = 1400;
+	modelName = "bigBoi";
 	stopEngine();
 }
 // speed modifier for bigBoi 
