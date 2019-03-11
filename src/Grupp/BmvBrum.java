@@ -7,6 +7,7 @@ import javafx.scene.paint.Color;
 	 */
 	public class BmvBrum extends Car {
 	private final static double trimFactor = 2.5;
+	public double weight = 1.4;
 
 	/**
 	 * @see Grupp.BmvBrum#BmvBrum

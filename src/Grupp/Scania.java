@@ -5,6 +5,7 @@ import javafx.scene.paint.Color;
 	public class Scania extends Car {
 		private int flakDegresOpen = 0;
 		public boolean flakOpen = false;
+		public double weight = 8;
 	//Description of the Scania	
 
 	public Scania() {

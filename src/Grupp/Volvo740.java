@@ -6,7 +6,8 @@ import javafx.scene.paint.Color;
 	 *
 	 */
 	public class Volvo740 extends Car {
-	private final static double trimFactor = 1.25;	
+	private final static double trimFactor = 1.25;
+	public double weight = 1;
 
 	/**
 	 * @see Grupp.Volvo740#Volvo740
