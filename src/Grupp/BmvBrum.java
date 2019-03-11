@@ -9,7 +9,7 @@ import javafx.scene.paint.Color;
 	private final static double trimFactor = 2.5;
 
 	/**
-	 * 
+	 * @see Grupp.BmvBrum#BmvBrum
 	 * A description of the aspects of an BmvBrum
 	 * 
 	 */
@@ -18,6 +18,7 @@ import javafx.scene.paint.Color;
 		enginePower = 200;
 		modelName = "BmvBrum";
 		stopEngine();
+		
 	}
 	// Unique speed modifier for BmvBrum 
 	

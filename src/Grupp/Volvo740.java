@@ -9,7 +9,7 @@ import javafx.scene.paint.Color;
 	private final static double trimFactor = 1.25;	
 
 	/**
-	 * @see Grupp.Car#Volvo740
+	 * @see Grupp.Volvo740#Volvo740
 	 * A description of the aspects of a Volvo740
 	 * 
 	 */
