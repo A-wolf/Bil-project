@@ -10,7 +10,7 @@ import javafx.scene.paint.Color;
 	public double weight = 1.4;
 
 	/**
-	 * 
+	 * @see Grupp.BmvBrum#BmvBrum
 	 * A description of the aspects of an BmvBrum
 	 * 
 	 */
@@ -19,6 +19,7 @@ import javafx.scene.paint.Color;
 		enginePower = 200;
 		modelName = "BmvBrum";
 		stopEngine();
+		
 	}
 	// Unique speed modifier for BmvBrum 
 	
