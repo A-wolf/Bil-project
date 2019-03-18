@@ -1,51 +1,39 @@
 package Grupp;
+
 import javafx.scene.paint.Color;
-	
-	
-	public class Scania extends Car {
-		private int flakDegresOpen = 0;
-		public boolean flakOpen = false;
-		public double weight = 8;
-	//Description of the Scania	
+
+public class Scania extends Car {
+	public double weight = 8;
+	// Description of the Scania
+	private Flatbed flatbed;
 
 	public Scania() {
 		color = Color.BLUE;
 		enginePower = 700;
 		modelName = "Scania";
 		stopEngine();
+		flatbed = new Flatbed();
 	}
-	// Unique speed modifier for Scania 
-	
+	// Unique speed modifier for Scania
+
 	public double speedFactor() {
 		return enginePower * 0.01;
 	}
-	
-	public void flakOpen(){
-		if (currentSpeed > 0){
-			return;
-		}else{
-		for(flakDegresOpen = 0; flakDegresOpen <= 70; flakDegresOpen++){
-			if(flakDegresOpen == 70){
-				flakOpen = true;
-			}
-			}
-		
-		}
-		
-	}
-	public void flakClose(){
-		for(flakDegresOpen = 0; flakDegresOpen >= 0; flakDegresOpen--){
-			if(flakDegresOpen == 0){
-				flakOpen = false;
-			}
-	}
-	}
-		public void gas(double amount) {
-			if(flakOpen = false){
+
+	public void gas(double amount) {
+		if (!flatbed.isOpen()) {
 			super.gas(amount);
 		}
+	}
+
+	public void openFlatbed() {
+		if (getCurrentSpeed() == 0) {
+			flatbed.flakOpen();
 		}
-
-
-	
+	}
+	public void closeFlatbed() {
+		if (getCurrentSpeed() == 0) {
+			flatbed.flakClose();
+		}
+	}
 }

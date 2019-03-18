@@ -1,6 +1,8 @@
 package Grupp;
 
-public class carLoader {
+public class CarLoader {
+	
+	
 	
 	
 	

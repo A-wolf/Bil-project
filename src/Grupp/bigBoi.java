@@ -6,9 +6,8 @@ import javafx.scene.paint.Color;
 	
 
 public class bigBoi extends Car {
-	private static final Car Scania = null;
-	private int flakDegresOpen = 0;
-	public boolean flakOpen = false;
+	public double weight = 16;
+	private Flatbed flatbed;
 	ArrayList<Car> load=new ArrayList<Car>();
 	
 //Description of the bigBoi	
@@ -18,37 +17,20 @@ public bigBoi() {
 	enginePower = 1400;
 	modelName = "bigBoi";
 	stopEngine();
+	flatbed = new Flatbed();
 }
 // speed modifier for bigBoi 
 
 public double speedFactor() {
+	
 	return enginePower * 0.01;
 }
 
-public void flakOpen(){
-	if (currentSpeed > 0){
-		return;
-	}else{
-	for(flakDegresOpen = 0; flakDegresOpen <= 70; flakDegresOpen++){
-		if(flakDegresOpen == 70){
-			flakOpen = true;
-		}
-		}
-	
-	}
-	
-}
-public void flakClose(){
-	for(flakDegresOpen = 0; flakDegresOpen >= 0; flakDegresOpen--){
-		if(flakDegresOpen == 0){
-			flakOpen = false;
-		}
-}
-}
+
 	
 	
 	public void lastSkit(Car c){
-		if(flakOpen = true){
+		if(flatbed.isOpen()){
 			if(load.size() < 5 && c.weight < 3){
 					load.add(c);
 				
@@ -58,8 +40,8 @@ public void flakClose(){
 		}
 	}
 	public void lastAv(){
-		if(flakOpen = false){
-			flakOpen();
+		if(!flatbed.isOpen()){
+			flatbed.flakOpen();
 		}
 		for(int i = load.size() - 1; i >= 0; i--) {
 			System.out.println("Unloading " + load.get(i).modelName);
@@ -70,7 +52,7 @@ public void flakClose(){
 	
 	
 	public void gas(double amount) {
-		if(flakOpen = false){
+		if(!flatbed.isOpen()){
 		super.gas(amount);
 	}
 	}
