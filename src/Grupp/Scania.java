@@ -29,6 +29,9 @@ public class Scania extends Car {
 		return enginePower * 0.01;
 	}
 
+	/* 
+	 * @see Grupp.Car#gas(double)
+	 */
 	public void gas(double amount) {
 		if (!flatbed.isOpen()) {
 			super.gas(amount);
