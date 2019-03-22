@@ -46,10 +46,10 @@ public class Saab95 extends Car {
 
 		/**
 		 * 
-		 *@see Grupp.Car#setTurboOff()
-		 * Turns the speed modifier turbo off 
+		 * @see Grupp.Car#setTurboOn()
+		 * Turns the speed modifier turbo on 
 		 * 
-		 */
+		 */	
 		private void setTurboOff() {
 			turboOn = false;
 		}

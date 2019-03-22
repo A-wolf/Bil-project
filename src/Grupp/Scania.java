@@ -1,11 +1,19 @@
 package Grupp;
-
 import javafx.scene.paint.Color;
-
+	/**
+	 * 
+	 * @author Bosses00 and MercuryBarium
+	 *
+	 */
 public class Scania extends Car {
 	public double weight = 8;
-	// Description of the Scania
 	private Flatbed flatbed;
+
+	/**
+	 * @see Grupp.Scania#Scania
+	 * A description of the aspects of a Saab95
+	 * 
+	 */
 
 	public Scania() {
 		color = Color.BLUE;
@@ -14,8 +22,9 @@ public class Scania extends Car {
 		stopEngine();
 		flatbed = new Flatbed();
 	}
-	// Unique speed modifier for Scania
-
+	/* 
+	 * @see Grupp.Car#speedFactor()
+	 */
 	public double speedFactor() {
 		return enginePower * 0.01;
 	}
