@@ -38,11 +38,17 @@ public class Scania extends Vehicle {
 		}
 	}
 
+	/**
+	 * @see Grupp.Flatbed#flakOpen()
+	 */
 	public void openFlatbed() {
 		if (getCurrentSpeed() == 0) {
 			flatbed.flakOpen();
 		}
 	}
+	/**
+	 * @see Grupp.Flatbed#flakClose()
+	 */
 	public void closeFlatbed() {
 		if (getCurrentSpeed() == 0) {
 			flatbed.flakClose();
