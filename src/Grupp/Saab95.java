@@ -5,7 +5,7 @@ import javafx.scene.paint.Color;
  * @author Bosses00 and MercuryBarium
  *
  */
-public class Saab95 extends Car {
+public class Saab95 extends Vehicle {
 	public double weight = 1.2;
 	/**
 	 * @see Grupp.Saab95#Saab95
@@ -36,7 +36,7 @@ public class Saab95 extends Car {
 
 		/**
 		 * 
-		 * @see Grupp.Car#setTurboOn()
+		 * @see Grupp.Vehicle#setTurboOn()
 		 * Turns the speed modifier turbo on 
 		 * 
 		 */	
@@ -46,7 +46,7 @@ public class Saab95 extends Car {
 
 		/**
 		 * 
-		 * @see Grupp.Car#setTurboOn()
+		 * @see Grupp.Vehicle#setTurboOn()
 		 * Turns the speed modifier turbo on 
 		 * 
 		 */	

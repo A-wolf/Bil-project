@@ -8,20 +8,20 @@ public interface Movable {
 
 	
 	/**
-	 * @see Grupp.Car#move()
+	 * @see Grupp.Vehicle#move()
 	 */
 	
 	void move();
 	
 	
 	/**
-	 * @see Grupp.Car#turnLeft()
+	 * @see Grupp.Vehicle#turnLeft()
 	 */
 	
 	void turnLeft();
 	
 	/**
-	 * @see Grupp.Car#turnRight()
+	 * @see Grupp.Vehicle#turnRight()
 	 */
 	
 	void turnRight();

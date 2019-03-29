@@ -6,12 +6,12 @@ import javafx.scene.paint.Color;
  * @author Bosses00 and MercuryBarium
  *
  */
-public abstract class Car implements Movable {
+public abstract class Vehicle implements Movable {
 	public boolean turboOn = false;
-	public double enginePower; // Engine power of the car
-	public double currentSpeed; // The current speed of the car
-	public Color color; // Color of the car
-	public String modelName; // The car model name
+	public double enginePower; // Engine power of the vehicle
+	public double currentSpeed; // The current speed of the vehicle
+	public Color color; // Color of the vehicle
+	public String modelName; // The vehicle model name
 	public double x = 0;
 	public double y = 0;
 	public double dir = 0;

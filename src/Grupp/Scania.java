@@ -5,7 +5,7 @@ import javafx.scene.paint.Color;
 	 * @author Bosses00 and MercuryBarium
 	 *
 	 */
-public class Scania extends Car {
+public class Scania extends Vehicle {
 	public double weight = 8;
 	private Flatbed flatbed;
 

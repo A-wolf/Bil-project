@@ -5,11 +5,11 @@ import javafx.scene.paint.Color;
 
 	
 
-public class bigBoi extends Car {
+public class bigBoi extends Vehicle {
 	public double weight = 16;
 	private Flatbed flatbed;
 	private CarLoader carLoader;
-	ArrayList<Car> load=new ArrayList<Car>();
+	ArrayList<Vehicle> load=new ArrayList<Vehicle>();
 	
 //Description of the bigBoi	
 
@@ -28,7 +28,7 @@ public double speedFactor() {
 	
 	return enginePower * 0.01;
 }
-public void lastSkit(Car c) {
+public void lastSkit(Vehicle c) {
 	if (flatbed.isOpen()) {
 		carLoader.lastSkit(c);
 	}

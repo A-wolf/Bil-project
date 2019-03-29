@@ -4,7 +4,7 @@ import javafx.scene.paint.Color;
 	 * @author Bosses00 and MercuryBarium
 	 *
 	 */
-public class Epa240 extends Car {
+public class Epa240 extends Vehicle {
 	public double weight = 1.3;
 	/**
 	 * @see Grupp.Epa240#Epa240
@@ -34,7 +34,7 @@ public class Epa240 extends Car {
 	}
 	/**
 	 * 
-	 * @see Grupp.Car#setTurboOn()
+	 * @see Grupp.Vehicle#setTurboOn()
 	 * Turns the speed modifier turbo on 
 	 * 
 	 */	
@@ -43,7 +43,7 @@ public class Epa240 extends Car {
 		}
 		/**
 		 * 
-		 * @see Grupp.Car#setTurboOn()
+		 * @see Grupp.Vehicle#setTurboOn()
 		 * Turns the speed modifier turbo on 
 		 * 
 		 */	
