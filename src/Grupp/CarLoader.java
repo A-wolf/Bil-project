@@ -8,16 +8,15 @@ public class CarLoader {
 	public void lastSkit(Car c){
 			if(load.size() < 5 && c.weight < 3){
 					load.add(c);
-			} 
+			}
 	}
 	public void lastAv(){
-		for(int i = load.size() - 1; i >= 0; i--) {
-			System.out.println("Unloading " + load.get(i).modelName);
-			load.remove(i);
-		}
+			load.remove(load.size() - 1);
 	}
 	
-	
+	public void LastAvFörst(){
+		load.remove(0);
+	}
 	
 	
 	
