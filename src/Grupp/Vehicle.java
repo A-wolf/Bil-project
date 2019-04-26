@@ -81,6 +81,16 @@ public abstract class Vehicle implements Movable {
 	public void turnRight() {
 		dir -= Math.PI / 4;
 	}
+
+	public double getX() {
+		// TODO Auto-generated method stub
+		return x;
+	}
+
+	public double getY() {
+		// TODO Auto-generated method stub
+		return y;
+	}
 	
 
 }

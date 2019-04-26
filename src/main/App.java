@@ -6,8 +6,8 @@ import javafx.scene.Scene;
 import javafx.scene.layout.BorderPane;
 import javafx.scene.paint.Color;
 import javafx.stage.Stage;
-import model.Vehicle;
-import model.Volvo740;
+import Grupp.Vehicle;
+import Grupp.Volvo740;
 import view.ButtonBox;
 import view.CarPane;
 

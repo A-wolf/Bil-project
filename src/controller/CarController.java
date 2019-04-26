@@ -1,7 +1,8 @@
 package controller;
 
 import javafx.animation.AnimationTimer;
-import model.Vehicle;
+
+import Grupp.Vehicle;
 import view.CarPane;
 
 public class CarController {
