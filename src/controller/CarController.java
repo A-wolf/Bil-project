@@ -8,6 +8,7 @@ import view.CarPane;
 public class CarController {
 
 	private Vehicle model;
+	
 
 	public CarController(CarPane cp) {
 

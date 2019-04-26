@@ -26,7 +26,7 @@ public class ButtonBox extends HBox {
 			controller.gas(spinner.getValue() / 100.0);
 		});
 		brakeButton.setOnAction(e -> {
-			controller.brake(spinner.getValue() * 100.0);
+			controller.brake(spinner.getValue() / 100.0);
 		});
 	}
 
@@ -41,7 +41,7 @@ public class ButtonBox extends HBox {
 		gasButton = new Button("Gas");
 		gasButton.setPrefSize(100, 20);
 
-		Button brakeButton = new Button("Brake");
+		brakeButton = new Button("Brake");
 		brakeButton.setPrefSize(100, 20);
 
 		spinnerBox.getChildren().addAll(spinner);

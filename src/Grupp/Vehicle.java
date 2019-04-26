@@ -48,6 +48,7 @@ public abstract class Vehicle implements Movable {
 
 	private void decrementSpeed(double amount) {
 		currentSpeed = getCurrentSpeed() - speedFactor() * amount;
+		
 	}
 	
 	public void gas(double amount) {
@@ -64,8 +65,12 @@ public abstract class Vehicle implements Movable {
 		if(amount < 0 || amount > 1){
 			return;
 		}
+		else if ((currentSpeed - amount) < 0) {			
+			return;
+		}
 		else{
 		decrementSpeed(amount);
+			return;
 		}
 	}
 
