@@ -31,5 +31,8 @@ public class CarController {
 	public void gas(double amount) {
 		model.gas(amount);
 	}
-
+	public void brake(double amount) {
+		model.brake(amount);
+	}
+	
 }
