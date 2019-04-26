@@ -5,7 +5,7 @@ import javafx.scene.paint.Color;
 
 	
 
-public class bigBoi extends Vehicle {
+public class CarTransport extends Vehicle {
 	public double weight = 16;
 	private Flatbed flatbed;
 	private CarLoader carLoader;
@@ -13,7 +13,7 @@ public class bigBoi extends Vehicle {
 	
 //Description of the bigBoi	
 
-public bigBoi() {
+public CarTransport() {
 	color = Color.BLUE;
 	enginePower = 1400;
 	modelName = "bigBoi";

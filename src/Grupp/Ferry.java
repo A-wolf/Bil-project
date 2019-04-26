@@ -4,7 +4,7 @@ import java.util.ArrayList;
 
 import javafx.scene.paint.Color;
 
-public class båtFan extends Vehicle {
+public class Ferry extends Vehicle {
 	public double weight = 100;
 	private Flatbed flatbed;
 	private CarLoader carLoader;
@@ -12,7 +12,7 @@ public class båtFan extends Vehicle {
 	
 //Description of the båtFan	
 
-public båtFan() {
+public Ferry() {
 	color = Color.BLUE;
 	enginePower = 10000;
 	modelName = "Färja";
