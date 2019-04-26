@@ -29,6 +29,9 @@ public class Flatbed {
 		}
 	}
 
+	/**
+	 * @see Grupp.Flatbed#flakOpen
+	 */	
 	public boolean isOpen(){
 		return flakOpen;
 	}
